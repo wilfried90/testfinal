@@ -83,6 +83,89 @@
       border-radius: 5px;
       cursor: pointer;
     }
+   
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            align-items: center;
+        }
+
+        .content {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+   
+        .description {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #e0e0e0;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #ff6b00;
+        }
+
+        .feature-text {
+            font-size: 0.9rem;
+        }
+
+        .image-container {
+            flex: 1;
+            position: relative;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+    
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content {
+                padding-right: 0;
+            }
+
+            .features {
+                flex-direction: column;
+            }
+
+            .price-box {
+                position: static;
+                margin-top: 1rem;
+            }
+        }
+    </style>
   </style>
 
 </head>
@@ -179,6 +262,35 @@
       </button>
     </div>
   </section>
+
+  <div class="container">
+    <div class="content">
+        <div class="header">
+           Pourquoi nous choisissons
+        </div>
+        <div class="description">
+          <p>
+            Il n'est pas nécessaire de s'abonner à plusieurs plateformes ; Flix Prime offre la consolidation de contenu de diverses plates-formes, chaînes premium, télévision en direct et sports, tout cela dans un endroit unique avec un prix imbattable.
+          </p>  
+        </div>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🕒</div>
+                <div class="feature-text">Assistance 24h/24 et 7j/7<br>Contactez-nous avec une attention personnalisée en permanence.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <div class="feature-text">Activation en 5 minutes<br>Vous n'avez besoin que d'une connexion Internet d'au moins 30 Mo.</div>
+            </div>
+       
+    <div class="image-container">
+        <img src="https://github.com/wilfried90/testfinal/blob/main/image/1.jpg?raw=true" alt="Femme regardant la télévision">
+        
+    </div>
+</div>
+   
+</section>
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
